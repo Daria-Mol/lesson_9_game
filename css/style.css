@@ -1,0 +1,137 @@
+ @import "null.css"; 
+ 
+ .container{
+	 max-width: 1100px;
+	 margin: 0px auto;
+	 font-size: 0;
+ }
+ p{
+	 font-size: 40px;
+	 color: #6201ff;
+	 text-shadow: 3px 3px 20px #000;
+ }
+ .game {
+	border: 5px double #6201ff;
+	background: url("../img/light-stars.gif") 0 0/100%  no-repeat;
+}
+.block{
+	background: url("../img/rser.png") 0 0/contain repeat;
+	visibility: hidden;
+}
+
+.game__block-1 {
+	height: 60px;
+	width: 70px;
+	visibility: visible;
+}
+
+.game__block-2{
+	display: inline-block;
+	height: 90px;
+	width: 100px;
+	visibility: hidden;
+	/* visibility: visible; */
+}
+.game__block-1:hover+.game__block-2,
+.game__block-2:hover{
+	visibility: visible;
+}
+.game__block-2-1{
+	display: inline-block;
+	height: 90px;
+	width: 560px;
+	visibility: hidden;
+	/* visibility: visible; */
+}
+.game__block-2:hover+.game__block-2-1,
+.game__block-2-1:hover{
+	visibility: visible;
+}
+.game__block-3{
+	height: 100px;
+	width: 40px;
+	margin: 0px 440px 0px auto;
+	visibility: hidden;
+}
+.game__block-2-1:hover+.game__block-3,
+.game__block-3:hover {
+	visibility: visible;
+}
+.game__block-4 {
+	height: 20px;
+	width: 480px;
+	margin: 0px 0px 0px auto;
+}
+.game__block-3:hover+.game__block-4,
+.game__block-4:hover {
+	visibility: visible;
+}
+.game__block-5 {
+	height: 100px;
+	width: 20px;
+	margin: 0px 0px 0px auto;
+}
+.game__block-4:hover+.game__block-5,
+.game__block-5:hover {
+	visibility: visible;
+}
+.game__block-6 {
+	height: 30px;
+	width: 100%;
+}
+.game__block-5:hover+.game__block-6,
+.game__block-6:hover {
+	visibility: visible;
+}
+.game__block-7 {
+	height: 160px;
+	width: 20px;
+}
+.game__block-6:hover+.game__block-7,
+.game__block-7:hover {
+	visibility: visible;
+}
+.game__block-8 {
+	height: 20px;
+	width: 500px;
+}
+.game__block-7:hover+.game__block-8,
+.game__block-8:hover {
+	visibility: visible;
+}
+.game__block-9 {
+	height: 20px;
+	width: 10px;
+	margin: 0px 0px 0px 490px;
+}
+.game__block-8:hover+.game__block-9,
+.game__block-9:hover {
+	visibility: visible;
+}
+.game__block-10 {
+	display: block;
+	height: 20px;
+	width: 30px;
+	margin: 0px 0px 0px 480px;
+	background: rgb(247, 3, 3);
+}
+.game__block-9:hover+.game__block-10,
+.game__block-10:hover {
+	visibility: visible;
+}
+
+.game__block-10:hover{
+	background: rgb(27, 3, 247);
+}
+.game__block-10:active{
+	background: rgb(247, 243, 3);
+}
+.game__win{
+	width: 1090px;
+	display: none;
+}
+.game__block-10:hover+.game__win,
+.game__win:hover {
+	display: block;
+}
+
